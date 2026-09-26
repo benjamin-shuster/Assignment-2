@@ -17,7 +17,7 @@
     "id": "q03",
     "question": "What is used to ensure there are no duplicate cookies in the cookie jar",
     "expected_file": "cookies.py",
-    "expected_function": "_find_no_duplicates",
+    "expected_function": "RequestsCookieJar._find_no_duplicates",
     "expected_answer": "In RequestsCookieJar, _find_no_duplicates() is responsible for preventing duplicate cookies with the same identity."
   },
   {
