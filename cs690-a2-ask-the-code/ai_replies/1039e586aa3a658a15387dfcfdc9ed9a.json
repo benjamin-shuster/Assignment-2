@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "1039e586aa3a658a15387dfcfdc9ed9a",
+  "asked_at": "2026-09-26T19:43:34+00:00",
+  "input_tokens": 730,
+  "output_tokens": 73,
+  "text": "{\"answer\":\"The available character detection libraries are `chardet` and `charset_normalizer`. The code tries `chardet` first, then `charset_normalizer`; if neither is available, it falls back to UTF-8.\",\"file\":\"compat.py (lines 18–27); models.py (lines 789–797)\"}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "01e3156094c549f744dfb47d21d5d566",
+  "asked_at": "2026-09-26T19:43:26+00:00",
+  "input_tokens": 2641,
+  "output_tokens": 466,
+  "text": "{\n  \"answer\": \"There is no fixed allowlist: the generic request API accepts any HTTP method string, including standard methods such as GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS. Redirect handling may change the method for certain status codes.\",\n  \"file\": \"requests/sessions.py\",\n  \"line\": \"221 (redirect method handling); 673–703 (sending the prepared request)\"\n}"
+}

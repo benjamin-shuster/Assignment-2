@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "924a2f25fb38bbb119154eeca8deaa61",
+  "asked_at": "2026-09-26T19:43:18+00:00",
+  "input_tokens": 2076,
+  "output_tokens": 709,
+  "text": "{\n  \"answer\": \"For a new HTTP status code, first check whether the project’s status-code registry already includes it. If it does not, add the numeric code and its canonical name and useful aliases in `requests/status_codes.py` (the file is not among the excerpts). Add or update tests to check that `requests.codes` resolves the name and aliases to the number, then run the test suite and submit a pull request with a concise explanation and a link to the relevant HTTP specification or authoritative source. The shown `adapters.py` code already copies the server’s status into `Response.status_code`; you generally do not need to change it. Change `sessions.py` only if the new code should affect redirect behavior—the listed redirect codes are handled specially at lines 224–227. The digest-auth range check in `auth.py` covers all 4xx responses, so a new 4xx code generally needs no change there.\",\n  \"file\": \"requests/status_codes.py (registry; not shown). The supplied excerpts potentially relevant to special behavior are `sessions.py` and `auth.py`.\",\n  \"line\": \"Find the status-code mapping in `requests/status_codes.py`; its line number is not available in the supplied excerpts. Related excerpts: `adapters.py` 371–372, `auth.py` 248–251, and `sessions.py` 224–227.\"\n}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "83866e93e6aaeb6225abf054852947a0",
+  "asked_at": "2026-09-26T19:43:04+00:00",
+  "input_tokens": 1251,
+  "output_tokens": 100,
+  "text": "{\n  \"answer\": \"No. A POST request does not inherently need a body. In this code, both `data` and `json` are optional and default to `None`, so you can send a POST without either. Include a body only if the server or endpoint requires one.\",\n  \"file\": \"api.py (lines 103–115); sessions.py (lines 626–637)\",\n  \"line\": \"103–115; 626–637\"\n}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "05e642ae903bf20d3f03cf0b161a665b",
+  "asked_at": "2026-09-26T19:43:33+00:00",
+  "input_tokens": 1384,
+  "output_tokens": 399,
+  "text": "{\n  \"answer\": \"Inside `SessionRedirectMixin.get_redirect_target`, `self` is the session handling the redirect. You can inspect its state, such as `self.cookies` or `self.proxies`. Outside that method, Requests has no global “current session”; keep a reference to the `requests.Session()` instance you use.\",\n  \"file\": \"requests/sessions.py\",\n  \"line\": \"107–125, 390–449\"\n}"
+}

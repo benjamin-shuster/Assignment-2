@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "be760719a2daea048389f761ae7d04f2",
+  "asked_at": "2026-09-26T19:43:29+00:00",
+  "input_tokens": 1020,
+  "output_tokens": 215,
+  "text": "{\n  \"answer\": \"Requests connects through an HTTPAdapter, which uses urllib3 connection pools. For a direct connection, the adapter normalizes the URL and gets a connection pool for it; for a proxied connection, it selects the proxy and gets a connection through a proxy manager. urllib3 handles the underlying network connection, including details such as sockets and TLS. If the proxy URL includes credentials, Requests adds a Proxy-Authorization header. The quoted-header utility shown is unrelated to connecting.\",\n  \"file\": \"requests/adapters.py\",\n  \"line\": \"495-534, 592-611\"\n}"
+}

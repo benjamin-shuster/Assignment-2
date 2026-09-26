@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "7120eec17188cad7cd9cad2115d48d30",
+  "asked_at": "2026-09-26T19:43:12+00:00",
+  "input_tokens": 1648,
+  "output_tokens": 180,
+  "text": "{\n  \"answer\": \"Call `_implementation()` to get the running Python implementation and its version, for example `{'name': 'CPython', 'version': '3.10.3'}`. It uses `platform.python_implementation()` and selects the version accordingly. You can also get both through `info()[\\\"implementation\\\"]`.\",\n  \"file\": \"help.py\",\n  \"line\": \"34-66, 69-83\"\n}"
+}

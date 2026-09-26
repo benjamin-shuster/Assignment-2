@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "202232af2b9c1e75f6adb06c6aa8eed9",
+  "asked_at": "2026-09-26T19:43:10+00:00",
+  "input_tokens": 1261,
+  "output_tokens": 96,
+  "text": "{\"answer\":\"`_find_no_duplicates` checks for multiple cookies matching the name, domain, and path, and raises `CookieConflictError` if it finds a duplicate match.\",\"file\":\"cookies.py\",\"line\":\"386–413\"}"
+}

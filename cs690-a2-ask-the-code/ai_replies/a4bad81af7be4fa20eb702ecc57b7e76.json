@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "a4bad81af7be4fa20eb702ecc57b7e76",
+  "asked_at": "2026-09-26T19:43:20+00:00",
+  "input_tokens": 1078,
+  "output_tokens": 142,
+  "text": "{\"answer\":\"On a redirect, Authorization is removed if the hostname changes, or if the scheme or port changes. Exceptions: HTTP to HTTPS is allowed when using the standard ports (80/443), and a port change is allowed when both URLs use the default port for the same scheme.\",\"file\":\"sessions.py\",\"line\":\"127–157\"}"
+}
