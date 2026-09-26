@@ -1,0 +1,11 @@
+id,question,expected_file,expected_function,retrieved,hit,hit_rank
+q01,Does a post request need a body / json as part of its request?,api.py,post,api.py::request; api.py::post; sessions.py::Session.post,yes,2
+q02,Can the requests library be used on a toaster running a microcontroller?,,,help.py::_implementation; models.py::Response.apparent_encoding; adapters.py::HTTPAdapter.init_poolmanager,n/a,
+q03,What is used to ensure there are no duplicate cookies in the cookie jar,cookies.py,RequestsCookieJar._find_no_duplicates,cookies.py::RequestsCookieJar._find_no_duplicates; models.py::PreparedRequest.__init__; sessions.py::Session.__init__,yes,1
+q04,How can I check the current implementation of the python version running and the version number?,help.py,_implementation,help.py::_implementation; help.py::info; models.py::PreparedRequest.prepare_body,yes,1
+q05,How do I make a pull request to add a new status code to the library?,,,adapters.py::HTTPAdapter.build_response; auth.py::HTTPDigestAuth.handle_401; sessions.py::SessionRedirectMixin.resolve_redirects,n/a,
+q06,When does auth get removed from the request?,sessions.py,SessionRedirectMixin.should_strip_auth,sessions.py::SessionRedirectMixin.should_strip_auth; models.py::PreparedRequest.prepare_cookies; auth.py::_basic_auth_str,yes,1
+q07,What meathods are allowed in the request function?,api.py,request,sessions.py::SessionRedirectMixin.resolve_redirects; sessions.py::Session.__init__; sessions.py::Session.send,no,
+q08,How does requests connect to the internet?,,,utils.py::unquote_header_value; adapters.py::HTTPAdapter.get_connection; adapters.py::HTTPAdapter.proxy_headers,n/a,
+q09,How can I get the curret session being used,sessions.py,session,sessions.py::SessionRedirectMixin.get_redirect_target; sessions.py::Session.__init__; adapters.py::HTTPAdapter.proxy_manager_for,no,
+q10,What are the available Character Detection libraries?,compat.py,_resolve_char_detection,models.py::Response.apparent_encoding; compat.py::_resolve_char_detection; __init__.py::check_compatibility,yes,2

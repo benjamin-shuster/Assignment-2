@@ -45,9 +45,9 @@ tool: Open AI chat GPT via web ui
 prompts: `prompts/split_file.md` . I know I am supposed to make a detailed prompt, but the doc string has most of the necessary information.
 review: skimed the output to ensure its safe to run and not doing anything harmful, and then ran the tests to ensure correctness
 checks: `ran pytest tests/test_split.py`, and the only failed test were due to the NotImplementedError for the split_corpus function.
-evidence: HANDOUT Step 2  - need to verify what this means
+evidence: HANDOUT Step 2, doc string
 risk: low risk, reviewed manualy
-
+changes: discarded code and used output from the Entry 2
 
 ## Entry 2
 artifact:  askcode/split.py at 7ca0bb12418ef35efe33c48ea5f8e7464a1bd10b
@@ -55,6 +55,14 @@ tool: Open AI chat GPT via web ui
 prompts: `prompts/split_corpus.md`.
 review: skimed the output to ensure its safe to run and not doing anything harmful, and then ran the tests to ensure correctness
 checks: `ran pytest tests/test_split.py`, and this time, all tests passed.
-evidence: HANDOUT Step 2  - need to verify what part of the ledger this means
+evidence: HANDOUT Step 2, tests
 risk: low risk, reviewed manualy
     
+## Entry 3
+artifact:  askcode/search_words.py at fee95a9746d1bc8f90340419c80c9b88eefcbf87
+tool: Open AI chat GPT via web ui
+prompts: `prompts/search_words.md`.
+review: focused more on the comments and logic in the code to ensure it correctly implements the search_words algorithm.
+checks: `ran pytest tests/test_search_words.py`, and all tests passed.
+evidence: HANDOUT Step 3
+risk: low risk, reviewed manualy
