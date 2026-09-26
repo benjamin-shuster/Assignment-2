@@ -30,4 +30,64 @@ def parse_reply(text: str) -> dict:
 
     Return a new dict with exactly the three keys and the values from the reply.
     """
-    raise NotImplementedError("Step 4: write parse_reply in askcode/answer.py")
+    try:
+        text = text.strip()
+
+        # Remove an optional Markdown code fence.
+        if text.startswith("```"):
+            lines = text.splitlines()
+
+            if (
+                len(lines) < 3
+                or lines[0] not in ("```", "```json")
+                or lines[-1] != "```"
+            ):
+                raise BadReply("Invalid Markdown code fence")
+
+            text = "\n".join(lines[1:-1])
+
+        # Require exactly one valid JSON object.
+        try:
+            data = json.loads(text)
+        except (json.JSONDecodeError, TypeError, ValueError) as exc:
+            raise BadReply("Invalid JSON") from exc
+
+        if not isinstance(data, dict):
+            raise BadReply("Reply must be a JSON object")
+
+        # Require exactly the specified keys.
+        if set(data.keys()) != {"answer", "file", "line"}:
+            raise BadReply("Incorrect keys")
+
+        answer = data["answer"]
+        file = data["file"]
+        line = data["line"]
+
+        # Validate answer.
+        if not isinstance(answer, str) or not answer.strip():
+            raise BadReply("Answer must be a non-empty string")
+
+        # Validate file.
+        if file is not None:
+            if not isinstance(file, str) or not file:
+                raise BadReply("File must be a non-empty string or null")
+
+        # Validate line. Explicitly reject booleans.
+        if line is not None:
+            if type(line) is not int or line < 1:
+                raise BadReply("Line must be a positive integer or null")
+
+        # File and line must either both be null or both be set.
+        if (file is None) != (line is None):
+            raise BadReply("File and line must both be set or both be null")
+
+        return {
+            "answer": answer,
+            "file": file,
+            "line": line,
+        }
+
+    except BadReply:
+        raise
+    except Exception as exc:
+        raise BadReply("Invalid reply") from exc
