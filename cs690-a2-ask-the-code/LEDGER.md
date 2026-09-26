@@ -122,3 +122,15 @@ evidence:  HANDOUT Step 5
 risk:      one run only; a fresh run may answer differently
 dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
 result:    correct 10 of 10,  5,162 in tokens, 639 out tokens; results/gold_five_part.csv.csv
+
+## Entry 9
+artifact:  results/top3_words_minimal.csv at commit 15e9643f3e39aefaf7a26ad5f5b37fa6b9e3f852
+tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
+prompts:   the minimal prompt in build_prompt_minimal in core.py;
+review:    read all ten replies and marked the correct column against questions.json
+checks:    python -m askcode.run_eval --search words --context top3 --prompt minimal
+           valid JSON 0 of 10,
+evidence:  HANDOUT Step 6
+risk:      one run only; a fresh run may answer differently
+dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
+result:    correct 0 of 10,  13,883 in tokens, 2,714 out tokens; results/top3_words_minimal.csv
