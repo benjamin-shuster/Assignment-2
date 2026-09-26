@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "3e1226cbadaf2ca4b5da5049cfd9f242",
+  "asked_at": "2026-09-26T19:12:43+00:00",
+  "input_tokens": 1500,
+  "output_tokens": 124,
+  "text": "{\"answer\":\"No. Both `data` and `json` are optional and default to `None`, so a POST request does not need a body or JSON.\",\"file\":\"api.py\",\"line\":103}"
+}

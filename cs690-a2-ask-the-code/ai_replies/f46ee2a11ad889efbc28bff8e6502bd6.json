@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "f46ee2a11ad889efbc28bff8e6502bd6",
+  "asked_at": "2026-09-26T19:20:50+00:00",
+  "input_tokens": 54776,
+  "output_tokens": 203,
+  "text": "{\"answer\":\"Add the numeric status code and its name aliases to the `_codes` mapping in the appropriate section; `_init()` then registers each name as an attribute on `codes` (and its uppercase form). The code shown does not specify the pull-request submission process.\",\"file\":\"status_codes.py\",\"line\":23}"
+}

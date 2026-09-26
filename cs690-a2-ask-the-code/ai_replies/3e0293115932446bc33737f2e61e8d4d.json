@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "3e0293115932446bc33737f2e61e8d4d",
+  "asked_at": "2026-09-26T19:28:36+00:00",
+  "input_tokens": 410,
+  "output_tokens": 209,
+  "text": "{\"answer\":\"The shown function does not retrieve an already-current session; calling `session()` creates and returns a `Session`. It is deprecated, and the code recommends creating a `Session` directly.\",\"file\":\"sessions.py\",\"line\":831}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "7b920c64d6267ea31a7ef4479bb8abc1",
+  "asked_at": "2026-09-26T19:28:29+00:00",
+  "input_tokens": 655,
+  "output_tokens": 47,
+  "text": "{\"answer\":\"Call `_implementation()`. It returns a dictionary with the current Python implementation under `name` and its version number under `version` (line 66).\",\"file\":\"help.py\",\"line\":66}"
+}

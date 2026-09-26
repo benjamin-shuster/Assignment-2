@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "d8af5f4428a50e52088ec9a2bae2d633",
+  "asked_at": "2026-09-26T19:28:32+00:00",
+  "input_tokens": 637,
+  "output_tokens": 66,
+  "text": "{\"answer\":\"Auth is removed when the old and new URLs have different hostnames, or when their ports or schemes change—except that same-scheme URLs using default ports retain auth, and a standard-port HTTP-to-HTTPS redirect on the same host also retains auth.\",\"file\":\"sessions.py\",\"line\":131}"
+}

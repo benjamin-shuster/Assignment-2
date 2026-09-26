@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "3711c1792da47b1073bfe5238076fa8b",
+  "asked_at": "2026-09-26T19:21:20+00:00",
+  "input_tokens": 54770,
+  "output_tokens": 80,
+  "text": "{\"answer\":\"The request function allows GET, OPTIONS, HEAD, POST, PUT, PATCH, and DELETE methods.\",\"file\":\"api.py\",\"line\":17}"
+}

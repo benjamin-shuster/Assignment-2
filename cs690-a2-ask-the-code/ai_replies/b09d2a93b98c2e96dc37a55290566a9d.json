@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "b09d2a93b98c2e96dc37a55290566a9d",
+  "asked_at": "2026-09-26T19:21:59+00:00",
+  "input_tokens": 54769,
+  "output_tokens": 225,
+  "text": "{\"answer\":\"The code shown has no accessor for a “current” session. Sessions are created explicitly with `Session()`; the `session()` helper also returns a new `Session` rather than retrieving an existing one.\",\"file\":\"sessions.py\",\"line\":819}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "cedd9dcf629202bc9b11c6660210a1c3",
+  "asked_at": "2026-09-26T19:21:04+00:00",
+  "input_tokens": 54768,
+  "output_tokens": 189,
+  "text": "{\"answer\":\"During a redirect, the Authorization header is removed if it is present and should_strip_auth returns true—typically when the hostname changes or the scheme or port changes, except for allowed default-port cases.\",\"file\":\"sessions.py\",\"line\":290}"
+}

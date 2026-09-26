@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "156342db73d9a4e6fc206eedf7d627e9",
+  "asked_at": "2026-09-26T19:28:28+00:00",
+  "input_tokens": 623,
+  "output_tokens": 105,
+  "text": "{\"answer\":\"It iterates through cookies matching the name and optional domain and path, and raises `CookieConflictError` when a second match is found.\",\"file\":\"cookies.py\",\"line\":403}"
+}

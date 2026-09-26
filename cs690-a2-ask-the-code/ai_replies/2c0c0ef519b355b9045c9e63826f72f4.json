@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "2c0c0ef519b355b9045c9e63826f72f4",
+  "asked_at": "2026-09-26T19:12:57+00:00",
+  "input_tokens": 1269,
+  "output_tokens": 159,
+  "text": "{\"answer\":\"HTTPAdapter selects a proxy for the URL. If one is configured, it normalizes and validates the proxy URL, then gets a connection from the proxy manager; otherwise, it parses the URL and gets a connection from the pool manager. It returns that connection (lines 516–534).\",\"file\":\"adapters.py\",\"line\":516}"
+}

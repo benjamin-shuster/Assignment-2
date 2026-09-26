@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "0d029e8d69168b43083c8ffb44eaa6d2",
+  "asked_at": "2026-09-26T19:12:53+00:00",
+  "input_tokens": 1327,
+  "output_tokens": 312,
+  "text": "{\"answer\":\"Authorization is removed when the redirect changes the hostname, or when the scheme or port changes—except for an HTTP-to-HTTPS redirect using the standard ports, and same-scheme redirects where both ports are defaults. See the hostname check and return conditions in the function.\",\"file\":\"sessions.py\",\"line\":131}"
+}

@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "4f4c4ee9f4df2ad6d9670769a50607ee",
+  "asked_at": "2026-09-26T19:28:33+00:00",
+  "input_tokens": 1115,
+  "output_tokens": 30,
+  "text": "{\"answer\":\"GET, OPTIONS, HEAD, POST, PUT, PATCH, or DELETE.\",\"file\":\"api.py\",\"line\":17}"
+}

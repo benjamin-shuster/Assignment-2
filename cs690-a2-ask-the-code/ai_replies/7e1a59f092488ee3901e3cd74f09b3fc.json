@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_key": "7e1a59f092488ee3901e3cd74f09b3fc",
+  "asked_at": "2026-09-26T19:21:38+00:00",
+  "input_tokens": 54767,
+  "output_tokens": 318,
+  "text": "{\"answer\":\"A Session selects a connection adapter for the request URL and sends the prepared request through it. The HTTP adapter obtains a urllib3 connection and calls `conn.urlopen` with the request method, URL, body, and headers to make the request.\",\"file\":\"adapters.py\",\"line\":667}"
+}
