@@ -37,4 +37,42 @@ def build_prompt_five_part(question: str, chunks: list[Chunk]) -> Prompt:
        the question. The question comes last. If chunks is empty, put NO_CODE under
        "Code:" instead.
     """
-    raise NotImplementedError("Step 4: write build_prompt_five_part in askcode/prompt.py")
+    code = "\n\n".join(format_chunk(chunk) for chunk in chunks)
+    system = """Goal:
+Answer questions about a codebase using only the provided code.
+
+Inputs and outputs:
+You receive code chunks with file names and line numbers, followed by a question.
+Return an answer supported by the provided code, including its file and line number.
+
+Rules:
+Answer only from the code shown.
+Do not guess, invent information, or use outside knowledge.
+If the code shown does not answer the question, reply with
+"not found in the code shown" as the answer, and null for both file and line.
+Only cite a file and line number that appear in the provided code.
+
+Example:
+Question: What does the following function return?
+
+Code:
+File: math_utils.py
+Line 5: def double(x):
+Line 6:     return x * 2
+
+Reply:
+{"answer": "The function returns x multiplied by 2.", "file": "math_utils.py", "line": 6}
+
+Reply format:
+Return exactly one JSON object with these keys:
+"answer": a string containing the answer.
+"file": a string containing the source filename, or null.
+"line": an integer containing the source line number, or null.
+Do not include Markdown, code fences, explanations, or any text before or after the JSON object."""
+
+    if not chunks:
+        code = NO_CODE
+
+    user = f"Code:\n{code}\n\nQuestion:\n{question}"
+
+    return Prompt(system=system, user=user)
