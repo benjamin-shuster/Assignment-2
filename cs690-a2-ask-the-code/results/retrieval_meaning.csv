@@ -1,0 +1,11 @@
+id,question,expected_file,expected_function,retrieved,hit,hit_rank
+q01,Does a post request need a body / json as part of its request?,api.py,post,api.py::post; sessions.py::Session.post; models.py::PreparedRequest.prepare_body,yes,1
+q02,Can the requests library be used on a toaster running a microcontroller?,,,models.py::Request.__repr__; cookies.py::RequestsCookieJar.iterkeys; cookies.py::MockRequest.__init__,n/a,
+q03,What is used to ensure there are no duplicate cookies in the cookie jar,cookies.py,RequestsCookieJar._find_no_duplicates,cookies.py::RequestsCookieJar._find_no_duplicates; cookies.py::_copy_cookie_jar; cookies.py::RequestsCookieJar.get,yes,1
+q04,How can I check the current implementation of the python version running and the version number?,help.py,_implementation,help.py::_implementation; __init__.py::check_compatibility; __init__.py::_check_cryptography,yes,1
+q05,How do I make a pull request to add a new status code to the library?,,,models.py::Response.__repr__; models.py::Response.raise_for_status; adapters.py::HTTPAdapter.build_response,n/a,
+q06,When does auth get removed from the request?,sessions.py,SessionRedirectMixin.should_strip_auth,sessions.py::SessionRedirectMixin.rebuild_auth; sessions.py::SessionRedirectMixin.should_strip_auth; utils.py::get_auth_from_url,yes,2
+q07,What meathods are allowed in the request function?,api.py,request,cookies.py::MockRequest.unverifiable; sessions.py::Session.request; cookies.py::MockRequest.is_unverifiable,no,
+q08,How does requests connect to the internet?,,,sessions.py::Session.request; api.py::request; api.py::get,n/a,
+q09,How can I get the curret session being used,sessions.py,session,sessions.py::session; sessions.py::Session.__enter__; sessions.py::Session.__init__,yes,1
+q10,What are the available Character Detection libraries?,compat.py,_resolve_char_detection,compat.py::_resolve_char_detection; models.py::Response.apparent_encoding; __init__.py::check_compatibility,yes,1
