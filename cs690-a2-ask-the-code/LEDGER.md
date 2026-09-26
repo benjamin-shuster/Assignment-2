@@ -76,3 +76,12 @@ checks: `pytest tests/test_prompt.py`, and all tests passed.
 evidence: HANDOUT Step 4 part A
 risk: low risk, reviewed manualy
 attachments used in the prompt: CS690_Week4_Prompting_Context_Retrieval.pptx from canvas
+
+## Entry 5
+artifact:  askcode/answer.py at b09e9b21d40dfddc4da0e79c0c4186fa4032b49e
+tool: Open AI chat GPT via web ui
+prompts: `prompts/answer.md`.
+review: read the code to ensure I understand the implementation.
+checks: `pytest tests/test_answer.py`, and all tests passed.
+evidence: HANDOUT Step 4 part B
+risk: low risk, reviewed manualy
