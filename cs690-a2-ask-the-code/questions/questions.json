@@ -1,16 +1,72 @@
 [
   {
-    "id": "example-1",
-    "question": "Does requests keep the Authorization header when a redirect goes from http to https on the same host?",
-    "expected_file": "sessions.py",
-    "expected_function": "SessionRedirectMixin.should_strip_auth",
-    "expected_answer": "Yes. For an http to https redirect on the same host with the standard ports, should_strip_auth returns False, so the header is kept (lines 137 to 143)."
+    "id": "q01",
+    "question": "Does a post request need a body / json as part of its request?",
+    "expected_file": "api.py",
+    "expected_function": "post",
+    "expected_answer": "No. The post function being used in the request does not require a body or json."
   },
   {
-    "id": "example-2",
-    "question": "Which company pays for hosting the requests documentation?",
+    "id": "q02",
+    "question": "Can the requests library be used on a toaster running a microcontroller?",
     "expected_file": null,
     "expected_function": null,
-    "expected_answer": "The code cannot answer this. A correct reply says not found in the code shown, with null file and line."
+    "expected_answer": "The source code does not have any answer to the provided question."
+  },
+  {
+    "id": "q03",
+    "question": "What is used to ensure there are no duplicate cookies in the cookie jar",
+    "expected_file": "cookies.py",
+    "expected_function": "_find_no_duplicates",
+    "expected_answer": "In RequestsCookieJar, _find_no_duplicates() is responsible for preventing duplicate cookies with the same identity."
+  },
+  {
+    "id": "q04",
+    "question": "How can I check the current implementation of the python version running and the version number?",
+    "expected_file": "help.py",
+    "expected_function": "_implementation",
+    "expected_answer": "The _implementation function in help.py provides information about the current Python implementation and its version."
+  },
+  {
+    "id": "q05",
+    "question": "How do I make a pull request to add a new status code to the library?",
+    "expected_file": null,
+    "expected_function": null,
+    "expected_answer": "The source code does not have any answer to the provided question."
+  },
+  {
+    "id": "q06",
+    "question": "When does auth get removed from the request?",
+    "expected_file": "sessions.py",
+    "expected_function": "SessionRedirectMixin.should_strip_auth",
+    "expected_answer": "The auth is removed when should_strip_auth returns True, like when the host name, port, or scheme changes (excluding http to https)."
+  },
+  {
+    "id": "q07",
+    "question": "What meathods are allowed in the request function?",
+    "expected_file": "api.py",
+    "expected_function": "request",
+    "expected_answer": "GET, OPTIONS, HEAD, POST, PUT, PATCH, and DELETE are allowed in the request function."
+  },
+  {
+    "id": "q08",
+    "question": "How does requests connect to the internet?",
+    "expected_file": null,
+    "expected_function": null,
+    "expected_answer": "The source code does not have any answer to the provided question."
+  },
+  {
+    "id": "q09",
+    "question": "How can I get the curret session being used",
+    "expected_file": "sessions.py",
+    "expected_function": "session",
+    "expected_answer": "calling the deprecated session() will give you the current session being used."
+  },
+  {
+    "id": "q10",
+    "question": "What are the available Character Detection libraries?",
+    "expected_file": "compat.py",
+    "expected_function": "_resolve_char_detection",
+    "expected_answer": "The available Character Detection libraries are 'chardet' and 'charset_normalizer'."
   }
 ]
