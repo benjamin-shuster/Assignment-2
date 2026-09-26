@@ -85,3 +85,40 @@ review: read the code to ensure I understand the implementation.
 checks: `pytest tests/test_answer.py`, and all tests passed.
 evidence: HANDOUT Step 4 part B
 risk: low risk, reviewed manualy
+
+## Entry 6
+artifact:  results/top3_words_five_part.csv at commit 0424fce22ccdc71ebceeaf6f21033eec1b912346
+tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
+prompts:   the five-part prompt in askcode/prompt.py at commit b1eed5e0ce5475afc6c863ad344d5bff3cc3c18c;
+review:    read all ten replies and marked the correct column against questions.json
+checks:    python -m askcode.run_eval --search words --context top3 --prompt five_part:
+           valid JSON 10 of 10, right place 7 of 10
+evidence:  HANDOUT Step 5
+risk:      one run only; a fresh run may answer differently
+dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
+result:    correct 7 of 10, 16,371 in tokens, 1,014 out tokens; results/top3_words_five_part.csv
+
+## Entry 7
+artifact:  results/results/whole_five_part.csv at commit 0424fce22ccdc71ebceeaf6f21033eec1b912346
+tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
+prompts:   the five-part prompt in askcode/prompt.py at commit b1eed5e0ce5475afc6c863ad344d5bff3cc3c18c;
+review:    read all ten replies and marked the correct column against questions.json
+checks:    python -m askcode.run_eval --context whole --prompt five_part:
+           valid JSON 10 of 10, right place 7 of 10
+evidence:  HANDOUT Step 5
+risk:      one run only; a fresh run may answer differently
+dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
+result:    correct 8 of 10, 547,713 in tokens, 1,605 out tokens; results/whole_five_part.csv
+
+
+## Entry 8
+artifact:  results/gold_five_part.csv.csv at commit 0424fce22ccdc71ebceeaf6f21033eec1b912346
+tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
+prompts:   the five-part prompt in askcode/prompt.py at commit b1eed5e0ce5475afc6c863ad344d5bff3cc3c18c;
+review:    read all ten replies and marked the correct column against questions.json
+checks:    python -m askcode.run_eval --context gold --prompt five_part:
+           valid JSON 10 of 10, right place 10 of 10
+evidence:  HANDOUT Step 5
+risk:      one run only; a fresh run may answer differently
+dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
+result:    correct 10 of 10,  5,162 in tokens, 639 out tokens; results/gold_five_part.csv.csv
