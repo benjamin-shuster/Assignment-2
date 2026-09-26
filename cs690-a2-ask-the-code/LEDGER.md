@@ -99,7 +99,7 @@ dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c
 result:    correct 7 of 10, 16,371 in tokens, 1,014 out tokens; results/top3_words_five_part.csv
 
 ## Entry 7
-artifact:  results/results/whole_five_part.csv at commit 0424fce22ccdc71ebceeaf6f21033eec1b912346
+artifact:  results/whole_five_part.csv at commit 0424fce22ccdc71ebceeaf6f21033eec1b912346
 tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
 prompts:   the five-part prompt in askcode/prompt.py at commit b1eed5e0ce5475afc6c863ad344d5bff3cc3c18c;
 review:    read all ten replies and marked the correct column against questions.json
@@ -134,3 +134,14 @@ evidence:  HANDOUT Step 6
 risk:      one run only; a fresh run may answer differently
 dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
 result:    correct 0 of 10,  13,883 in tokens, 2,714 out tokens; results/top3_words_minimal.csv
+
+## Entry 10
+artifact:  results/retrieval_meaning.csv at commit 4e67538bc3525ed8e2b505d5da7a072885ecbe09
+tool:      askcode run_eval, openai gpt-6-luna, 2026-09-26
+prompts:   `prompts/search_meaning.md`.
+review:    read all ten replies and marked the correct column against questions.json
+checks:    python -m askcode.run_eval --search meaning --no-ai
+evidence:  HANDOUT Step 7
+risk:      one run only; a fresh run may answer differently
+dataset:   questions/questions.json at commit dbac75a0056b6bf5c07eef522ad504086c06ea4a; corpus requests v2.32.3
+result:    correct 6 of 7; results/retrieval_meaning.csv
